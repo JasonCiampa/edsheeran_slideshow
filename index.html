@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    
+    <title>Ed Sheeran Slideshow</title>
+</head>
+<body>
+    <header>
+        <img src="assets/21.jpg" alt="">
+        <h2>Ed Sheeran Slideshow</h2>
+    </header>
+    <main>
+        <div class="container">
+            <div class="imagecarousel">
+                <div class="image fadeout"><img src="assets/9.jpg" alt=""></div>
+                <div class="image fadeout"><img src="assets/5.jpg" alt=""></div>
+                <div class="image fadeout"><img src="assets/21.jpg" alt=""></div>
+                <div class="image fadeout"><img src="assets/22.jpg" alt=""></div>
+                <div class="image fadeout"><img src="assets/31.jpg" alt=""></div>
+                <div class="prev" onclick="showImage(-1)"><i class="fa-solid fa-angles-left"></i></div>
+                <div class="next" onclick="showImage(1)"><i class="fa-solid fa-angles-right"></i></div>
+            </div>
+        </div>
+
+        <div class="dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+    </main>
+    <footer>
+        <p>&copy; <span id="copyright"></span> Jason Ciampa</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
